@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing page</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  .button-container {
+    display: flex;
+    background-color: rgb(27, 133, 219);
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+  }
+
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    transform: translateY(-3px);
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+</style>
+
+<style>
+  .card-container {
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-top: 50px;
+    max-width: 280px;
+    height: 300px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    margin-right: 2.9rem;
+    display: inline-block;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 2000px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+ 
+  .content {
+    padding: 1rem;
+  }
+
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+
+  .card__content {
+    position: absolute;
+
+    margin-top: 200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .card:hover svg {
+    scale: 0;
+  }
+
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+</style>
+<style>
+  .card-1 {
+    width: 90%;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+  }
+
+  .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: right;
+  }
+
+ 
+
+  .text-body {
+    color: rgb(134, 134, 134);
+  }
+
+  /*Text*/
+  .text-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /*Hover*/
+  .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
+
+  .card-details p {
+    font-size: 0.9rem;
+  }
+</style>
+
+
+
+
+<body>
+
+  
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="photo.png" style=" height: 10%; width: 8%; ">
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#co">About</a></li>
+          <li><a href="page4.html">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="page2.html">Login</a></li>
+          <li><a href="page3.html">SignUp</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div id="top">
+      <div class="contain">
+        <h1 style="color: rgb(0, 0, 0); text-align: center; margin-top: 50px;">Welcome to <span
+            style="color: #370cf8d7;">Stack Blaze</span> </h1>
+        <h2 style="color: black; margin-top: 10px; text-align: center; font-size: 200%;">Igniting Your Full-Stack
+          Potential</h2>
+        <p style="margin-top: 20px ; font-size: 100%; text-align: center;">
+          Stack Blaze is your go-to destination for accessing a diverse range of courses and top-notch videos curated
+          from various sources, enabling you to delve into
+          specific full-stack languages with ease and proficiency.</p>
+        
+      </div>
+    </div>
+
+    <div id="end">
+      <div class="con">
+
+        <div class="col-1">
+          <h1 style="font-size: 400%; color: #000000; margin-top: 20%; margin-left: 10px;">WHY Stack Blaze?</h1>
+          <p>Discover the latest tools, frameworks, and best practices for building
+
+          </p>
+          <p>dynamic and scalable web applications.</p>
+          <p>Our platform offers comprehensive resources, tutorials, and insights </p>
+          <p>to elevate your skills and stay ahead in the rapidly evolving tech landscape.
+
+          </p>
+
+        </div>
+        <div class="col-2">
+          <img src="photo1.png" id="pic" alt="Description of image"
+            style=" height: 90%; width: 70%; margin-top: 10%; margin-left: 20%;">
+        </div>
+      </div>
+
+      <div class="what">
+        <h1 style="color: black; text-align: center;"> What we offer</h1>
+      </div>
+
+
+      <div class="card-container">
+        <div class="card">
+          <img src="photo14.avif" class="image">
+
+          <div class="card__content">
+            <p class="card__title">Expert Guidance</p>
+            <p class="card__description">Access expert advice and guidance from industry professionals to navigate
+              complex development challenges and achieve your goals.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="photo15.avif" class="image">
+
+
+
+          <div class="card__content">
+            <p class="card__title">Cutting-Edge Content</p>
+            <p class="card__description">Stay updated with our curated selection of tutorials, and case studies covering
+              a wide range of topics, from front-end technologies to backend systems and everything in between.</p>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="photo16.avif" class="image">
+
+          <div class="card__content">
+            <p class="card__title">Hands-On Learning</p>
+            <p class="card__description">Dive into practical, hands-on learning experiences with our interactive
+              workshops, coding challenges, and projects designed to hone your skills and build real-world applications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="co">
+
+
+        <h1 style="margin-top: 100px; text-align: center;">About Us</h1>
+        <div class="card-1">
+          <div class="card-details" style="width: 70%;">
+            <p class="text-title">Stack Blaze - The Ultimate Destination For Begginers in Coding</p>
+            <p class="text-body">Our website is tailored specifically for beginners, focusing on languages such as HTML,
+              CSS, JavaScript, as well as popular frameworks and technologies like Express.js, React.js, Node.js, and
+              MongoDB. Here, you'll find carefully curated lists of the best courses and playlists, handpicked to
+              provide you with comprehensive and engaging learning experiences</p>
+            <img style="position: absolute;  right: 30px; top: 20px; border-radius: 10px; height: 75%; width: 25%;"
+              src="photo17.jpeg" class="card-img-right">
+          </div>
+          <!-- <button class="card-button">More info</button> -->
+        </div>
+        
+       
+
+        <!----------contact----------------------->
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Contact</title>
+          <script src="https://kit.fontawesome.com/22ba4cc2b1.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="contact.css">
+          <script src="script.js"></script>
+        </head>
+
+        <body>
+
+
+          <div id="contact">
+            <h1 class="sub-title" style="text-align: center; font-family: 'Croissant One', cursive;">Contact Me! </h1>
+            <div class="container">
+
+              <div class="row">
+                <div class="contact-left">
+
+                  <!-- <h1 class="sub-title">Contact </h1> -->
+
+                  <h6 style="color: #000000;">"Feel free to reach out to me for inquiries, collaborations, or just to
+                    say hello! Whether it's about a project, feedback, or anything else, I'm always eager to hear from
+                    you. Drop me a message or connect through my social profiles below!"</h6>
+                  <p style="color: #694ceb"><i class="fa-solid fa-paper-plane"></i>kavya.jagana@gmail.com</p>
+                  <p style="color: #694ceb;"><i class="fa-solid fa-phone"></i>7659035530</p>
+                  <div class="social-icons">
+
+                    <a href="https://www.linkedin.com/in/kavya-jagana-5836aa269/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Kavyajagana"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <div class="contact-right">
+                  <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+
+                    <button> submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      </div>
+    </div>
+
+</body>
+
+</html>
