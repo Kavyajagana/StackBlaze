@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/22ba4cc2b1.js" crossorigin="anonymous"></script>
+  <style>
+    body{
+  background: rgb(209, 207, 207);
+  margin-bottom: 20px;
+  
+  font-family: 'Poppins', sans-serif;
+  
+ 
+ margin-top: -17px;
+}
+.abo {
+  margin-top: 0.5%;
+  margin-bottom: -8px;
+  margin-left: 4px;
+  margin-right: -0.5px;
+  
+}
+nav{
+  padding-right: 5%;
+  display: flex;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px 5px ;
+  margin-left: 15px;
+}
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2d00f7 ;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+  width: 100%;
+
+}
+.abo h1{
+  font-size: 40px;
+  margin-top: 1%;
+  margin-left: 4px;
+  margin-right: -0.5px;
+  color: #2d00f7;
+}
+  </style>
+
+
+
+  <style>
+    
+    .card-container {
+  display: inline-block;
+  flex-wrap: wrap;
+   
+
+}
+
+    .card {
+      max-width: 300px;
+      border-radius: 0.5rem;
+      background-color: #fffbfb;
+      padding: 30px ;
+      display: inline-block; 
+      margin-right: 2rem; 
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      border: 1px solid transparent;
+    }
+    
+
+    .card a {
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 1.1rem;
+    }
+
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+      
+    }
+
+    .title {
+      color: #111827;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 600;
+    }
+
+    .desc {
+      margin-top: 0.5rem;
+      color: #6B7280;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .action {
+      display: inline-flex;
+      margin-top: 1rem;
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      align-items: center;
+      gap: 0.25rem;
+      background-color: #2563EB;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .action span {
+      transition: .3s ease;
+    }
+
+    .action:hover span {
+      transform: translateX(4px);
+    }
+  </style>
+  <style>
+    .checked {
+  color: orange;
+}
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="abo">
+      
+<nav>
+  <img src="photo.png" style=" height: 100px; width: 100px; margin-top: 10px;" >
+<ul>
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="about.html" >About</a></li>
+    <li><a href="page4.html">Courses</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     <li><a href="page2.html">Login</a></li>
+     <li><a href="page3.html">SignUp</a></li>
+</ul>
+</nav>
+</div>
+</div>
+
+<h1 style="font-size: 40px;"> Free Courses</h1>
+<p style="font-size: 20px;">Access these free courses with no cost.</p>
+  <div class="card-container" style="margin-top: 30px;">  <div class="card"   style="margin-bottom: 2rem;">
+    <img src="photo5.png" class="image">
+    <div class="content">
+      <a href="#">
+        
+        <span class="title">
+          Intermediate HTML and CSS Courses
+        </span>
+      </a>
+
+      <p class="desc">
+        This course covers HTML and CSS from the ground up, offering assignments, supplementary resources for review, and progress tracking.
+      </p>
+
+      <a class="action" href="https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <div class="card-container">  <div class="card">
+    <img src="photo6.jpeg" class="image">
+    <div class="content">
+      
+        <span class="title">
+          Solo learn Web Development Course
+        </span>
+      </a>
+
+      <p class="desc">
+        This course provides an engaging learning experience with interactive quizzes and daily streaks, and upon completion, participants receive a certificate </p>
+
+      <a class="action" href="https://www.sololearn.com/en/learn/courses/web-development">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card-container">  <div class="card">
+    <img src="photo7.jpeg" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          HTML5 and CSS Fundamentals
+        </span>
+      </a>
+
+      <p class="desc">
+        This comprehensive course covers all topics from scratch, and while it's free to enroll, a certificate is available upon payment
+      </p>
+
+      <a class="action" href="https://www.edx.org/learn/css/the-world-wide-web-consortium-w3c-html5-and-css-fundamentals?index=product&queryID=76046f1267ca42eb4c2cf64b078e2349&position=2&results_level=first-level-results&term=html+%26+css&objectID=course-1a666720-9507-4ea7-992e-8a956c83d775&campaign=HTML5+and+CSS+Fundamentals&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="card-container">  <div class="card">
+    <img src="photo8.jpeg" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Codecacademy HTML & CSS courses
+        </span>
+      </a>
+
+      <p class="desc">
+        This course offers both a free basic membership and an upgraded pro plan, which includes additional classes, Quizzes are provided after every topic.
+      </p>
+
+      <a class="action" href="https://www.codecademy.com/catalog/language/html-css">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card-container">  <div class="card">
+    <img src="photo9.jpeg" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Learn HTML & CSS: How To Start Your Web Dev Career
+        </span>
+      </a>
+
+      <p class="desc">
+        This top-rated free course on Udemy, with a 4.6 rating, provides comprehensive information on HTML and CSS from the ground up.
+      </p>
+
+      <a class="action" href="https://www.udemy.com/course/how-i-landed-a-web-development-job-earned-5k-freelancing/">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+<h1 style="font-size: 40px;"> Paid Courses</h1>
+<p style="font-size: 20px;">Enroll in these paid courses to take your skills to the next level.</p>
+
+<div class="card-container">  <div class="card">
+  <img src="photo10.jpeg" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        Build Responsive Real-World Websites with HTML and CSS
+      </span>
+    </a>
+
+    
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>499</p>
+
+    <a class="action" href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/?couponCode=IND21PM">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="card-container">  <div class="card">
+  <img src="photo11.jpeg" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        The HTML & CSS Bootcamp 2024 Edition
+      </span>
+    </a>
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>449</p>
+    
+
+    <a class="action" href="https://www.udemy.com/course/how-i-landed-a-web-development-job-earned-5k-freelancing/">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="card-container">  <div class="card">
+  <img src="photo13.jpeg" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        HTML&CSS Tutorial and Projects Course 
+      </span>
+    </a>
+
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>499</p>
+
+
+    <a class="action" href="https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/?couponCode=IND21PM/">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+<h1> </h1>
+<p style="font-size: 25px; padding-top: 20px;">Reference Links</p>
+ <a href="https://www.w3schools.com/html/default.asp" style="font-size: 20px;"> W3 Schools</a>  
+</br>
+ <a href="https://web.dev/learn/css/" style="font-size: 20px;"> web.dev</a>  
+ </br>  
+ <a href="https://www.geeksforgeeks.org/html-css/" style="font-size: 20px;"> geeks for geeks</a>
+
+  </body>
+  </html>
