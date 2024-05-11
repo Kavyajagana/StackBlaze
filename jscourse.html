@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/22ba4cc2b1.js" crossorigin="anonymous"></script>
+  <style>
+    body{
+  background: rgb(209, 207, 207);
+  margin-bottom: 20px;
+  
+  font-family: 'Poppins', sans-serif;
+  
+ 
+ margin-top: -17px;
+}
+.abo {
+  margin-top: 0.5%;
+  margin-bottom: -8px;
+  margin-left: 4px;
+  margin-right: -0.5px;
+  
+}
+nav{
+  padding-right: 5%;
+  display: flex;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px 5px ;
+  margin-left: 15px;
+}
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2d00f7 ;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+  width: 100%;
+
+}
+.abo h1{
+  font-size: 40px;
+  margin-top: 1%;
+  margin-left: 4px;
+  margin-right: -0.5px;
+  color: #2d00f7;
+}
+  </style>
+
+
+
+  <style>
+    
+    .card-container {
+  display: inline-block;
+  flex-wrap: wrap;
+   
+
+}
+
+    .card {
+      max-width: 300px;
+      border-radius: 0.5rem;
+      background-color: #fffbfb;
+      padding: 30px ;
+      display: inline-block; 
+      margin-right: 2rem; 
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      border: 1px solid transparent;
+    }
+    
+
+    .card a {
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 1.1rem;
+    }
+
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+      
+    }
+
+    .title {
+      color: #111827;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 600;
+    }
+
+    .desc {
+      margin-top: 0.5rem;
+      color: #6B7280;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .action {
+      display: inline-flex;
+      margin-top: 1rem;
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      align-items: center;
+      gap: 0.25rem;
+      background-color: #2563EB;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .action span {
+      transition: .3s ease;
+    }
+
+    .action:hover span {
+      transform: translateX(4px);
+    }
+  </style>
+  <style>
+    .checked {
+  color: orange;
+}
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="abo">
+      
+<nav>
+  <img src="photo.png" style=" height: 100px; width: 100px; margin-top: 10px;" >
+<ul>
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="about.html" >About</a></li>
+    <li><a href="page4.html">Courses</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <li><a href="page2.html">Login</a></li>
+     <li><a href="page3.html">SignUp</a></li>
+</ul>
+</nav>
+</div>
+</div>
+
+<h1 style="font-size: 40px;"> Free Courses</h1>
+<p style="font-size: 20px;">Access these free courses with no cost.</p>
+  <div class="card-container" style="margin-top: 30px;">  <div class="card"   style="margin-bottom: 2rem;">
+    <img src="js1.jpeg" class="image">
+    <div class="content">
+      <a href="#">
+        
+        <span class="title">
+          Fork Javascript -Self Paced
+        </span>
+      </a>
+
+      <p class="desc">
+        It’s a beginner’s guide to the JavaScript language and environment, for both newbies and experienced JavaScript developers.
+      </p>
+
+      <a class="action" href="https://www.geeksforgeeks.org/courses/fork-javascript?utm_source=geeksforgeeks&utm_medium=gblog+best_javascript_courses&utm_campaign=fork_javascript_self_paced+promotion">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <div class="card-container">  <div class="card">
+    <img src="js2.jpeg" style="height: 170px;" class="image">
+    <div class="content">
+      
+        <span class="title">
+          Interactivity with JavaScript
+        </span>
+      </a>
+
+      <p class="desc">
+        This is a beginner level course which help you to understand how JavaScript is used to perform various operations.</p>
+
+      <a class="action" href="https://www.coursera.org/learn/javascript">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card-container">  <div class="card">
+    <img src="photo9.jpeg" style="height: 145px;" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Advanced and Object Oriented JavaScript and ES6
+        </span>
+      </a>
+
+      <p class="desc">
+        This is a FREE course offered by Udemy where you master the internals of JavaScript and use it in a better way. 
+      </p>
+
+      <a class="action" href="https://www.udemy.com/course/advanced-and-object-oriented-javascript/">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="card-container">  <div class="card">
+    <img src="photo9.jpeg" style="height: 170px;" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Javascript Essentials
+        </span>
+      </a>
+
+      <p class="desc">
+        In this course, you will learn how JavaScript works, some basic API’s and finally create a mini project.
+      </p>
+
+      <a class="action" href="https://www.udemy.com/course/javascript-essentials/">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card-container">  <div class="card">
+    <img src="photo8.jpeg" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Learn JavaScript
+        </span>
+      </a>
+
+      <p class="desc">
+        This is a beginner level course which help you to learn how to use JavaScript — a powerful and flexible programming language for adding website interactivity.
+      </p>
+
+      <a class="action" href="https://www.codecademy.com/learn/introduction-to-javascript">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+<h1 style="font-size: 40px;"> Paid Courses</h1>
+<p style="font-size: 20px;">Enroll in these paid courses to take your skills to the next level.</p>
+
+<div class="card-container">  <div class="card">
+  <img src="js3.png" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        The Complete JavaScript Course 2024: From Zero to Expert!
+      </span>
+    </a>
+
+    
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>3699</p>
+
+    <a class="action" href="https://www.udemy.com/course/the-complete-javascript-course/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-UTc2lqr.rMSKDqlVO6Wm4w&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads&couponCode=KEEPLEARNING">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="card-container">  <div class="card">
+  <img src="jsp1.jpeg" style="height: 180px;" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        Modern JavaScript From The Beginning 2.0
+      </span>
+    </a>
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>3699</p>
+    
+
+    <a class="action" href="https://www.udemy.com/course/modern-javascript-from-the-beginning/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-AUOj3gUWUQUsm3mFEi40.A&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads&couponCode=KEEPLEARNING">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="card-container">  <div class="card">
+  <img src="jsp2.jpeg" style="height: 210px;" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        
+Complete JavaScript Course
+      </span>
+    </a>
+
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>6299 (yearly subscription)</p>
+
+
+    <a class="action" href="https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/?couponCode=IND21PM/">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+<h1> </h1>
+<p style="font-size: 25px; padding-top: 20px;">Reference Links</p>
+ <a href="https://www.w3schools.com/js/default.asp" style="font-size: 20px;"> W3 Schools</a>  
+</br>
+ <a href="https://web.dev/learn/javascript" style="font-size: 20px;"> web.dev</a>  
+ </br>  
+ <a href="https://www.geeksforgeeks.org/javascript/?ref=dhm" style="font-size: 20px;"> geeks for geeks</a>
+
+  </body>
+  </html>
