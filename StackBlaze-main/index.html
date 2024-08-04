@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/22ba4cc2b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Full Stack Courses</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a id="openLoginModal" href="#">Login</a></li>
+            <li><a id="openSignupModal" href="#">Signup</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="home">
+        <div class="welcome">
+          <h1>Welcome to <span style="color: #370cf8d7">Stack Blaze</span></h1>
+          <h6>Igniting Your Full-Stack Potential</h6>
+          <p>
+            Stack Blaze is your go-to destination for accessing a diverse range
+            of courses and top-notch videos curated from various sources,
+            enabling you to delve into specific full-stack languages with ease
+            and proficiency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex-container">
+        <div class="why">
+          <h2>Why Stack Blaze?</h2>
+          <p>
+            Discover the latest tools, frameworks, and best practices for
+            building dynamic and scalable web applications. Our platform offers
+            comprehensive resources, tutorials, and insights to elevate your
+            skills and stay ahead in the rapidly evolving tech landscape.
+          </p>
+        </div>
+
+        <div class="col-2">
+          <img
+            src="images/photo1.png"
+            id="pic"
+            alt="Description of image"
+            style="height: 90%; width: 70%; margin-top: 10%; margin-left: 20%"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="what">
+        <h2>What We Offer</h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/photo14.avif" class="image" />
+          <div class="card__content">
+            <p class="card__title">Expert Guidance</p>
+            <p class="card__description">
+              Access expert advice and guidance from industry professionals to
+              navigate complex development challenges and achieve your goals.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/photo15.avif" class="image" />
+          <div class="card__content">
+            <p class="card__title">Cutting-Edge Content</p>
+            <p class="card__description">
+              Stay updated with our curated selection of tutorials, and case
+              studies covering a wide range of topics, from front-end
+              technologies to backend systems and everything in between.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/photo16.avif" class="image" />
+          <div class="card__content">
+            <p class="card__title">Hands-On Learning</p>
+            <p class="card__description">
+              Dive into practical, hands-on learning experiences with our
+              interactive workshops, coding challenges, and projects designed to
+              hone your skills and build real-world applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="about">
+        <h2 style="font-size: 5rem; text-align: center">About Us</h2>
+        <div class="about-us">
+          <div class="about-container">
+            <div class="about-text">
+              <h3>
+                Stack Blaze - The Ultimate Destination For Beginners in Coding
+              </h3>
+
+              <p class="text-body">
+                Our website is tailored specifically for beginners, focusing on
+                languages such as HTML, CSS, JavaScript, as well as popular
+                frameworks and technologies like Express.js, React.js, Node.js,
+                and MongoDB. Here, you'll find carefully curated lists of the
+                best courses and playlists, handpicked to provide you with
+                comprehensive and engaging learning experiences
+              </p>
+            </div>
+            <div class="about-image">
+              <img
+                src="images/photo17.jpeg"
+                alt="About Us Image"
+                class="about-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="contact">
+        <h2 style="font-size: 4rem; text-align: center">Contact Us</h2>
+        <div class="contact-section">
+          <div class="contact-container">
+            <div class="contact-info">
+              <img src="images/logo.png" alt="Logo" class="nav-logo" />
+              <p>
+                Feel free to reach out if you have any queries, want to catch
+                up, or need assistance .
+              </p>
+              <p>
+                Email:
+                <a href="mailto:kavya.jagana@gmail.com"
+                  >kavya.jagana@gmail.com</a
+                >
+              </p>
+              <p>Phone: <a href="tel:7659035530">7659035530</a></p>
+              <div class="social-icons">
+                <a href="https://github.com/Kavyajagana"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/kavya-jagana-5836aa269/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <div class="form-box">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeLoginModal">&times;</span>
+        <h1 style="color: #370cf8d7; text-align: center">Login</h1>
+        <form action="" id="form">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              style="border: 1px solid rgb(34, 193, 195)"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              style="border: 1px solid rgb(34, 193, 195)"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn"
+            style="
+              width: 100%;
+              height: 35px;
+              background-color: #370cf8d7;
+              border-radius: 10px;
+              color: aliceblue;
+            "
+          >
+            Login
+          </button>
+          <p class="signup">
+            New member?
+            <a class="signup-link" href="#signupModal" id="openSignupModal2"
+              >Sign up here</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeSignupModal">&times;</span>
+        <h1 style="color: #370cf8d7; text-align: center">Signup</h1>
+        <form action="" id="signupForm">
+          <div class="input-group">
+            <label for="newUsername">Username</label>
+            <input
+              type="text"
+              id="newUsername"
+              name="newUsername"
+              required
+              style="border: 1px solid rgb(34, 193, 195)"
+            />
+          </div>
+          <div class="input-group">
+            <label for="newPassword">Password</label>
+            <input
+              type="password"
+              id="newPassword"
+              name="newPassword"
+              required
+              style="border: 1px solid rgb(34, 193, 195)"
+            />
+          </div>
+          <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+              style="border: 1px solid rgb(34, 193, 195)"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn"
+            style="
+              width: 100%;
+              height: 35px;
+              background-color: #370cf8d7;
+              border-radius: 10px;
+              color: aliceblue;
+            "
+          >
+            Signup
+          </button>
+          <p class="login">
+            Already a member?
+            <a class="login-link" href="#loginModal" id="openLoginModal2"
+              >Login here</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to handle modal open/close
+      const loginModal = document.getElementById("loginModal");
+      const signupModal = document.getElementById("signupModal");
+      const openLoginModal = document.getElementById("openLoginModal");
+      const closeLoginModal = document.getElementById("closeLoginModal");
+      const openSignupModal = document.getElementById("openSignupModal");
+      const closeSignupModal = document.getElementById("closeSignupModal");
+      const openSignupModal2 = document.getElementById("openSignupModal2");
+      const openLoginModal2 = document.getElementById("openLoginModal2");
+
+      // Open Login Modal
+      openLoginModal.onclick = function () {
+        loginModal.style.display = "block";
+      };
+
+      // Close Login Modal
+      closeLoginModal.onclick = function () {
+        loginModal.style.display = "none";
+      };
+
+      // Open Signup Modal
+      openSignupModal.onclick = function () {
+        signupModal.style.display = "block";
+        loginModal.style.display = "none"; // Close login modal
+      };
+
+      // Close Signup Modal
+      closeSignupModal.onclick = function () {
+        signupModal.style.display = "none";
+      };
+
+      // Open Signup Modal from Login Modal
+      openSignupModal2.onclick = function () {
+        signupModal.style.display = "block";
+        loginModal.style.display = "none"; // Close login modal
+      };
+
+      // Open Login Modal from Signup Modal
+      openLoginModal2.onclick = function () {
+        loginModal.style.display = "block";
+        signupModal.style.display = "none"; // Close signup modal
+      };
+
+      // Close modal when clicking outside of it
+      window.onclick = function (event) {
+        if (event.target == loginModal) {
+          loginModal.style.display = "none";
+        }
+        if (event.target == signupModal) {
+          signupModal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

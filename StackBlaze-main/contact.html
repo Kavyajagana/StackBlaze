@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      src="https://kit.fontawesome.com/22ba4cc2b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="nav-container">
+              <img src="images/logo.png" alt="Logo" class="nav-logo" />
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id="openLoginModal" href="#">Login</a></li>
+                <li><a id="openSignupModal" href="#">Signup</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>
+          If you have any questions, feel free to reach out to me through the
+          form below or via my contact information.
+        </p>
+
+        <div class="contact-info">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@example.com">kavya.jagana@gmail.com</a>
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+1234567890">7659035530</a>
+          </p>
+          <div class="social-icons">
+            <a href="https://github.com/Kavyajagana"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kavya-jagana-5836aa269/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <form action="#" method="POST" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeLoginModal">&times;</span>
+          <h1 style="color: #370cf8d7; text-align: center">Login</h1>
+          <form action="" id="form">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                required
+                style="border: 1px solid rgb(34, 193, 195)"
+              />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                style="border: 1px solid rgb(34, 193, 195)"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn"
+              style="
+                width: 100%;
+                height: 35px;
+                background-color: #370cf8d7;
+                border-radius: 10px;
+                color: aliceblue;
+              "
+            >
+              Login
+            </button>
+            <p class="signup">
+              New member?
+              <a class="signup-link" href="#signupModal" id="openSignupModal2"
+                >Sign up here</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Signup Modal -->
+      <div id="signupModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeSignupModal">&times;</span>
+          <h1 style="color: #370cf8d7; text-align: center">Signup</h1>
+          <form action="" id="signupForm">
+            <div class="input-group">
+              <label for="newUsername">Username</label>
+              <input
+                type="text"
+                id="newUsername"
+                name="newUsername"
+                required
+                style="border: 1px solid rgb(34, 193, 195)"
+              />
+            </div>
+            <div class="input-group">
+              <label for="newPassword">Password</label>
+              <input
+                type="password"
+                id="newPassword"
+                name="newPassword"
+                required
+                style="border: 1px solid rgb(34, 193, 195)"
+              />
+            </div>
+            <div class="input-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+                style="border: 1px solid rgb(34, 193, 195)"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn"
+              style="
+                width: 100%;
+                height: 35px;
+                background-color: #370cf8d7;
+                border-radius: 10px;
+                color: aliceblue;
+              "
+            >
+              Signup
+            </button>
+            <p class="login">
+              Already a member?
+              <a class="login-link" href="#loginModal" id="openLoginModal2"
+                >Login here</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+  
+      <script>
+        // JavaScript to handle modal open/close
+        const loginModal = document.getElementById("loginModal");
+        const signupModal = document.getElementById("signupModal");
+        const openLoginModal = document.getElementById("openLoginModal");
+        const closeLoginModal = document.getElementById("closeLoginModal");
+        const openSignupModal = document.getElementById("openSignupModal");
+        const closeSignupModal = document.getElementById("closeSignupModal");
+        const openSignupModal2 = document.getElementById("openSignupModal2");
+        const openLoginModal2 = document.getElementById("openLoginModal2");
+  
+        // Open Login Modal
+        openLoginModal.onclick = function () {
+          loginModal.style.display = "block";
+        };
+  
+        // Close Login Modal
+        closeLoginModal.onclick = function () {
+          loginModal.style.display = "none";
+        };
+  
+        // Open Signup Modal
+        openSignupModal.onclick = function () {
+          signupModal.style.display = "block";
+          loginModal.style.display = "none"; // Close login modal
+        };
+  
+        // Close Signup Modal
+        closeSignupModal.onclick = function () {
+          signupModal.style.display = "none";
+        };
+  
+        // Open Signup Modal from Login Modal
+        openSignupModal2.onclick = function () {
+          signupModal.style.display = "block";
+          loginModal.style.display = "none"; // Close login modal
+        };
+  
+        // Open Login Modal from Signup Modal
+        openLoginModal2.onclick = function () {
+          loginModal.style.display = "block";
+          signupModal.style.display = "none"; // Close signup modal
+        };
+  
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+          if (event.target == loginModal) {
+            loginModal.style.display = "none";
+          }
+          if (event.target == signupModal) {
+            signupModal.style.display = "none";
+          }
+        };
+      </script>
+    </body>
+  </html>
+  
+  </body>
+</html>

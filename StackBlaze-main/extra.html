@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="contact-info.css" />
+    <script src="https://kit.fontawesome.com/22ba4cc2b1.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+    background: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #2d00f7;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2d00f7;
+}
+
+h2 {
+    color: #2d00f7;
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.terms ul {
+    padding-left: 20px;
+}
+
+.address p {
+    line-height: 1.6;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="photo.png" alt="Logo" style="height: 100px; width: 100px; margin-top: 10px" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="page4.html">Courses</a></li>
+                <li><a href="contact-info.html">Contact Info</a></li>
+                <li><a id="openLoginModal" href="#">Login</a></li>
+                <li><a id="openSignupModal" href="#">SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Contact Information</h1>
+
+            <section class="faq">
+                <h2>Frequently Asked Questions (FAQs)</h2>
+                <div class="faq-item">
+                    <h3>Q1: What is the refund policy?</h3>
+                    <p>A: You can request a full refund within 30 days of purchase.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q2: How can I reset my password?</h3>
+                    <p>A: Click on 'Forgot Password' on the login page to reset your password.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q3: How do I contact support?</h3>
+                    <p>A: You can reach support via email at <a href="mailto:support@example.com">support@example.com</a>.</p>
+                </div>
+            </section>
+
+            <section class="terms">
+                <h2>Terms and Conditions</h2>
+                <p>
+                    By using our website, you agree to the following terms and conditions:
+                    <ul>
+                        <li>All content provided on this site is for informational purposes only.</li>
+                        <li>We reserve the right to modify the content at any time.</li>
+                        <li>Your use of the website indicates your acceptance of these terms.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="address">
+                <h2>Our Address</h2>
+                <p>
+                    Stack Blaze<br />
+                    123 Coding Lane<br />
+                    Learn City, Code State<br />
+                    ZIP: 12345<br />
+                    <i class="fa-solid fa-phone"></i> Phone: +1 (234) 567-890<br />
+                    <i class="fa-solid fa-envelope"></i> Email: <a href="mailto:info@example.com">info@example.com</a>
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
