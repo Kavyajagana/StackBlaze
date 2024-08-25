@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/22ba4cc2b1.js" crossorigin="anonymous"></script>
+  <style>
+    body{
+  background: rgb(209, 207, 207);
+  margin-bottom: 20px;
+  
+  font-family: 'Poppins', sans-serif;
+  
+ 
+ margin-top: -17px;
+}
+.abo {
+  margin-top: 0.5%;
+  margin-bottom: -8px;
+  margin-left: 4px;
+  margin-right: -0.5px;
+  
+}
+nav {
+  background-color: transparent; /* Background color for the nav */
+  padding: 10px 20px; /* Padding for the nav */
+}
+
+.nav-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+  max-width: 1200px; /* Max width for the nav container */
+  margin: 0 auto; /* Center the nav container */
+}
+
+.nav-logo {
+  height: 80px; /* Set height for the logo */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between logo and nav items */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Flexbox for horizontal layout */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  flex-grow: 1; /* Allow ul to take available space */
+  justify-content: flex-end; /* Align nav items to the right */
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: rgb(0, 0, 0); /* Link color */
+  font-weight: bold; /* Bold links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #2d00f7; /* Change color on hover */
+}
+.abo h1{
+  font-size: 40px;
+  margin-top: 1%;
+  margin-left: 4px;
+  margin-right: -0.5px;
+  color: #2d00f7;
+}
+  </style>
+
+
+
+  <style>
+    
+    .card-container {
+  display: inline-block;
+  flex-wrap: wrap;
+   
+
+}
+
+    .card {
+      max-width: 300px;
+      border-radius: 0.5rem;
+      background-color: #fffbfb;
+      padding: 30px ;
+      display: inline-block; 
+      margin-right: 2rem; 
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      border: 1px solid transparent;
+    }
+    
+
+    .card a {
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 1.1rem;
+    }
+
+    .image {
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+      
+    }
+
+    .title {
+      color: #111827;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 600;
+    }
+
+    .desc {
+      margin-top: 0.5rem;
+      color: #6B7280;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .action {
+      display: inline-flex;
+      margin-top: 1rem;
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      align-items: center;
+      gap: 0.25rem;
+      background-color: #2563EB;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .action span {
+      transition: .3s ease;
+    }
+
+    .action:hover span {
+      transform: translateX(4px);
+    }
+ 
+    .checked {
+  color: orange;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 500px;
+  /* Could be more or less, depending on screen size */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup,
+.login {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%; /* Make cards full width on small screens */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .about-container {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .contact-info {
+    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-bottom: 20px; /* Add space below contact info */
+  }
+
+  .contact-form {
+    width: 100%; /* Full width for the form on smaller screens */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="abo">
+      
+      <nav>
+        <div class="nav-container">
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a id="openLoginModal" href="#">Login</a></li>
+            <li><a id="openSignupModal" href="#">Signup</a></li>
+          </ul>
+        </div>
+      </nav>
+</div>
+</div>
+
+<h1 style="font-size: 40px;"> Free Courses</h1>
+<p style="font-size: 20px;">Access these free courses with no cost.</p>
+  <div class="card-container" style="margin-top: 30px;">  <div class="card"   style="margin-bottom: 2rem;">
+    <img src="images/js1.jpeg" class="image">
+    <div class="content">
+      <a href="#">
+        
+        <span class="title">
+          Fork Javascript -Self Paced
+        </span>
+      </a>
+
+      <p class="desc">
+        It’s a beginner’s guide to the JavaScript language and environment, for both newbies and experienced JavaScript developers.
+      </p>
+
+      <a class="action" href="https://www.geeksforgeeks.org/courses/fork-javascript?utm_source=geeksforgeeks&utm_medium=gblog+best_javascript_courses&utm_campaign=fork_javascript_self_paced+promotion">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <div class="card-container">  <div class="card">
+    <img src="images/js2.jpeg" style="height: 170px;" class="image">
+    <div class="content">
+      
+        <span class="title">
+          Interactivity with JavaScript
+        </span>
+      </a>
+
+      <p class="desc">
+        This is a beginner level course which help you to understand how JavaScript is used to perform various operations.</p>
+
+      <a class="action" href="https://www.coursera.org/learn/javascript">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card-container">  <div class="card">
+    <img src="images/photo9.jpeg" style="height: 145px;" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Advanced and Object Oriented JavaScript and ES6
+        </span>
+      </a>
+
+      <p class="desc">
+        This is a FREE course offered by Udemy where you master the internals of JavaScript and use it in a better way. 
+      </p>
+
+      <a class="action" href="https://www.udemy.com/course/advanced-and-object-oriented-javascript/">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="card-container">  <div class="card">
+    <img src="images/photo9.jpeg" style="height: 170px;" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Javascript Essentials
+        </span>
+      </a>
+
+      <p class="desc">
+        In this course, you will learn how JavaScript works, some basic API’s and finally create a mini project.
+      </p>
+
+      <a class="action" href="https://www.udemy.com/course/javascript-essentials/">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card-container">  <div class="card">
+    <img src="images/photo8.jpeg" class="image">
+    <div class="content">
+      <a href="#">
+        <span class="title">
+          Learn JavaScript
+        </span>
+      </a>
+
+      <p class="desc">
+        This is a beginner level course which help you to learn how to use JavaScript — a powerful and flexible programming language for adding website interactivity.
+      </p>
+
+      <a class="action" href="https://www.codecademy.com/learn/introduction-to-javascript">
+        Explore Course
+        <span aria-hidden="true">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+  </div>
+
+<h1 style="font-size: 40px;"> Paid Courses</h1>
+<p style="font-size: 20px;">Enroll in these paid courses to take your skills to the next level.</p>
+
+<div class="card-container">  <div class="card">
+  <img src="images/js3.png" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        The Complete JavaScript Course 2024: From Zero to Expert!
+      </span>
+    </a>
+
+    
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>3699</p>
+
+    <a class="action" href="https://www.udemy.com/course/the-complete-javascript-course/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-UTc2lqr.rMSKDqlVO6Wm4w&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads&couponCode=KEEPLEARNING">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="card-container">  <div class="card">
+  <img src="images/jsp1.jpeg" style="height: 180px;" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        Modern JavaScript From The Beginning 2.0
+      </span>
+    </a>
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>3699</p>
+    
+
+    <a class="action" href="https://www.udemy.com/course/modern-javascript-from-the-beginning/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-AUOj3gUWUQUsm3mFEi40.A&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads&couponCode=KEEPLEARNING">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="card-container">  <div class="card">
+  <img src="images/jsp2.jpeg" style="height: 210px;" class="image">
+  <div class="content">
+    <a href="#">
+      <span class="title">
+        
+Complete JavaScript Course
+      </span>
+    </a>
+
+    <p><i class="fa-solid fa-indian-rupee-sign"></i>6299 (yearly subscription)</p>
+
+
+    <a class="action" href="https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/?couponCode=IND21PM/">
+      Explore Course
+      <span aria-hidden="true">
+        →
+      </span>
+    </a>
+  </div>
+</div>
+</div>
+<h1> </h1>
+<p style="font-size: 25px; padding-top: 20px;">Reference Links</p>
+ <a href="https://www.w3schools.com/js/default.asp" style="font-size: 20px;"> W3 Schools</a>  
+</br>
+ <a href="https://web.dev/learn/javascript" style="font-size: 20px;"> web.dev</a>  
+ </br>  
+ <a href="https://www.geeksforgeeks.org/javascript/?ref=dhm" style="font-size: 20px;"> geeks for geeks</a>
+ <div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeLoginModal">&times;</span>
+    <h1 style="color: #370cf8d7; text-align: center">Login</h1>
+    <form action="" id="form">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          style="border: 1px solid rgb(34, 193, 195)"
+        />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          style="border: 1px solid rgb(34, 193, 195)"
+        />
+      </div>
+      <button
+        type="submit"
+        class="btn"
+        style="
+          width: 100%;
+          height: 35px;
+          background-color: #370cf8d7;
+          border-radius: 10px;
+          color: aliceblue;
+        "
+      >
+        Login
+      </button>
+      <p class="signup">
+        New member?
+        <a class="signup-link" href="#signupModal" id="openSignupModal2"
+          >Sign up here</a
+        >
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeSignupModal">&times;</span>
+    <h1 style="color: #370cf8d7; text-align: center">Signup</h1>
+    <form action="" id="signupForm">
+      <div class="input-group">
+        <label for="newUsername">Username</label>
+        <input
+          type="text"
+          id="newUsername"
+          name="newUsername"
+          required
+          style="border: 1px solid rgb(34, 193, 195)"
+        />
+      </div>
+      <div class="input-group">
+        <label for="newPassword">Password</label>
+        <input
+          type="password"
+          id="newPassword"
+          name="newPassword"
+          required
+          style="border: 1px solid rgb(34, 193, 195)"
+        />
+      </div>
+      <div class="input-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+          style="border: 1px solid rgb(34, 193, 195)"
+        />
+      </div>
+      <button
+        type="submit"
+        class="btn"
+        style="
+          width: 100%;
+          height: 35px;
+          background-color: #370cf8d7;
+          border-radius: 10px;
+          color: aliceblue;
+        "
+      >
+        Signup
+      </button>
+      <p class="login">
+        Already a member?
+        <a class="login-link" href="#loginModal" id="openLoginModal2"
+          >Login here</a
+        >
+      </p>
+    </form>
+  </div>
+</div>
+
+<script>
+  // JavaScript to handle modal open/close
+  const loginModal = document.getElementById("loginModal");
+  const signupModal = document.getElementById("signupModal");
+  const openLoginModal = document.getElementById("openLoginModal");
+  const closeLoginModal = document.getElementById("closeLoginModal");
+  const openSignupModal = document.getElementById("openSignupModal");
+  const closeSignupModal = document.getElementById("closeSignupModal");
+  const openSignupModal2 = document.getElementById("openSignupModal2");
+  const openLoginModal2 = document.getElementById("openLoginModal2");
+
+  // Open Login Modal
+  openLoginModal.onclick = function () {
+    loginModal.style.display = "block";
+  };
+
+  // Close Login Modal
+  closeLoginModal.onclick = function () {
+    loginModal.style.display = "none";
+  };
+
+  // Open Signup Modal
+  openSignupModal.onclick = function () {
+    signupModal.style.display = "block";
+    loginModal.style.display = "none"; // Close login modal
+  };
+
+  // Close Signup Modal
+  closeSignupModal.onclick = function () {
+    signupModal.style.display = "none";
+  };
+
+  // Open Signup Modal from Login Modal
+  openSignupModal2.onclick = function () {
+    signupModal.style.display = "block";
+    loginModal.style.display = "none"; // Close login modal
+  };
+
+  // Open Login Modal from Signup Modal
+  openLoginModal2.onclick = function () {
+    loginModal.style.display = "block";
+    signupModal.style.display = "none"; // Close signup modal
+  };
+
+  // Close modal when clicking outside of it
+  window.onclick = function (event) {
+    if (event.target == loginModal) {
+      loginModal.style.display = "none";
+    }
+    if (event.target == signupModal) {
+      signupModal.style.display = "none";
+    }
+  };
+</script>
+</body>
+</html>
+
+  </body>
+  </html>
